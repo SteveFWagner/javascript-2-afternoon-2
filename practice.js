@@ -211,6 +211,14 @@ function removeItem(list,item){
   }
   
 }
+function addItem(list,item){
+  if(list && item){
+    list.push(item)
+    return list
+  }else {
+    return[]
+  }
+}
 
 
 ////////// PROBLEM 9 //////////
@@ -220,7 +228,12 @@ function removeItem(list,item){
 */
 
 //Code Here
-
+var maker = (arr) => {
+  for(let i = 0;i<=215;i++){
+    arr.push(arr[1])
+  }
+  return arr
+}
 
 
 ////////// PROBLEM 10 //////////
